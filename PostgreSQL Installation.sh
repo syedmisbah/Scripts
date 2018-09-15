@@ -20,7 +20,8 @@ update-rc.d postgresql enable
 
 #Add keys from APT of postgres to local machine
 #https://wiki.postgresql.org/wiki/Apt
-curl -fsSL https://salsa.debian.org/postgresql/postgresql-common/raw/master/pgdg/apt.postgresql.org.sh
+curl -O apt.postgresql.org.sh https://salsa.debian.org/postgresql/postgresql-common/raw/master/pgdg/apt.postgresql.org.sh 
+sudo sh apt.postgresql.org.sh
 
 #Install pgadmin 4 
 sudo apt-get update
